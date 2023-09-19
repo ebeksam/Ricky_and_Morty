@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+}
+.container nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 50px 30px 10px;
+}
+.container nav img {
+  width: 4%;
+}
+.container nav ul {
+  display: flex;
+  gap: 30px;
+}
+.container nav ul li {
+  list-style: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.container nav ul li a:hover {
+  color: orange;
+  cursor: pointer;
+}
+.container h1 {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  margin: 150px 20px 80px 20px;
+}
+
+main {
+  background-color: #282b32;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+main .content {
+  margin: 50px 0;
+}
+main .content .card {
+  display: flex;
+  border-radius: 10px;
+  margin: 30px 0;
+  justify-content: center;
+}
+main .content .card img {
+  width: 40%;
+  border-radius: 10px 0 0 10px;
+}
+main .content .card .desc {
+  width: 60%;
+  background-color: #3c3e43;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  padding: 20px;
+}
+main .content .card .desc h2 {
+  font-size: 25px;
+}
+main .content .card .desc h2:hover {
+  color: orange;
+  cursor: pointer;
+}
+main .content .card .desc .para {
+  font-size: 20px;
+}
+main .content .card .desc .para:hover {
+  color: orange;
+  cursor: pointer;
+}
+main .content .card .desc .light-gray {
+  color: #9e9e9e;
+  padding: 20px 0 10px 0;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #212328;
+}
+footer p {
+  color: #9e9e9e;
+}
+footer .my-name {
+  color: #fff;
+  border-bottom: 1px solid orange;
+}
+footer #currentYear {
+  padding-left: 6px;
+}/*# sourceMappingURL=style.css.map */
