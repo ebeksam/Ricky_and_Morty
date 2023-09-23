@@ -1,0 +1,38 @@
+@media (max-width: 820px) {
+  body {
+    max-width: 820px;
+  }
+
+  .container {
+    nav {
+      margin: 0;
+      padding: 20px;
+      border-bottom: 1px solid $very-light-gray;
+      img {
+        width: 8%;
+      }
+    }
+  }
+
+  main {
+    .hero {
+      h1 {
+        font-size: 3.75rem;
+        margin: 225px 0 225px 0;
+      }
+    }
+
+    .hero-content {
+      .wrapper {
+        flex-direction: column;
+        padding: 50px 80px 80px 80px;
+        gap: 0;
+        .content {
+          .card {
+            margin: 30px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
