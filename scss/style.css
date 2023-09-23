@@ -150,14 +150,14 @@ footer #currentYear {
     right: 2rem;
     z-index: 9999;
     background-color: transparent;
-    background-image: url("/assets/icon-hamburger.svg");
+    background-image: url("assets/icon-hamburger.svg");
     background-repeat: no-repeat;
     width: 2rem;
     aspect-ratio: 1;
     border: 0;
   }
   .container nav #mobile-nav-toggle[aria-expanded=true] {
-    background-image: url("/assets/icon-close.svg");
+    background-image: url("assets/icon-close.svg");
   }
   .container nav ul {
     position: fixed;
