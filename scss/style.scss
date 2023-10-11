@@ -68,58 +68,61 @@ main {
 
   .hero-content {
     background-color: $drak-gray;
+    padding: 4.5rem;
 
     .wrapper {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      padding: 50px 0;
+      align-items: center;
+      max-width: 1920px;
 
-      .content {
-        .card {
-          display: flex;
-          border-radius: 10px;
-          margin: 30px 0;
-          justify-content: center;
+      .card {
+        display: flex;
+        margin: 0.75rem;
+        justify-content: center;
 
-          img {
-            width: 40%;
-            border-radius: 10px 0 0 10px;
+        img {
+          width: 40%;
+          border-radius: 10px 0 0 10px;
+        }
+
+        .desc {
+          width: 60%;
+          background-color: $light-gray;
+          border-radius: 0 10px 10px 0;
+          color: $white;
+          padding: 20px;
+
+          h2 {
+            font-size: 25px;
           }
 
-          .desc {
-            width: 60%;
-            background-color: $light-gray;
-            border-radius: 0 10px 10px 0;
-            color: $white;
-            padding: 20px;
+          h2:hover {
+            color: $hover-color;
+            cursor: pointer;
+          }
 
-            h2 {
-              font-size: 25px;
-            }
+          .para {
+            font-size: 20px;
+          }
 
-            h2:hover {
-              color: $hover-color;
-              cursor: pointer;
-            }
+          .para:hover {
+            color: $hover-color;
+            cursor: pointer;
+          }
 
-            .para {
-              font-size: 20px;
-            }
-
-            .para:hover {
-              color: $hover-color;
-              cursor: pointer;
-            }
-
-            .light-gray {
-              color: $very-light-gray;
-              padding: 20px 0 10px 0;
-              font-size: 18px;
-            }
+          .light-gray {
+            color: $very-light-gray;
+            padding: 20px 0 10px 0;
+            font-size: 18px;
           }
         }
       }
+    }
+
+    .wrapper > * {
+      flex: 1 1 600px;
     }
   }
 }

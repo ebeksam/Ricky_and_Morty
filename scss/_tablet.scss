@@ -24,13 +24,10 @@
 
     .hero-content {
       .wrapper {
-        flex-direction: column;
-        padding: 50px 80px 80px 80px;
-        gap: 0;
-        .content {
-          .card {
-            margin: 30px 0 0 0;
-          }
+        display: block;
+
+        .card {
+          margin-bottom: 2rem;
         }
       }
     }

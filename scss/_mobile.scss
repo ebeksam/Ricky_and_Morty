@@ -54,27 +54,26 @@
     }
 
     .hero-content {
+      padding: 4rem 2rem 2rem 2rem;
       .wrapper {
-        padding: 30px 30px 60px 30px;
-        .content {
-          .card {
-            flex-direction: column;
+        .card {
+          flex-direction: column;
+          margin: 0 0 2rem 0;
 
-            img {
-              width: 100%;
-              border-radius: 10px 10px 0 0;
-            }
+          img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+          }
 
-            .desc {
-              width: 100%;
-              border-radius: 0 0 10px 10px;
-
-              h2 {
-                font-size: 30px;
-              }
-            }
+          .desc {
+            width: 100%;
+            border-radius: 0 0 10px 10px;
           }
         }
+      }
+
+      .wrapper > * {
+        flex: 1 1 294px;
       }
     }
   }

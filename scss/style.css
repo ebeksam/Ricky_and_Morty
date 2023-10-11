@@ -51,48 +51,52 @@ main .hero h1 {
 }
 main .hero-content {
   background-color: #282b32;
+  padding: 4.5rem;
 }
 main .hero-content .wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  padding: 50px 0;
+  align-items: center;
+  max-width: 1920px;
 }
-main .hero-content .wrapper .content .card {
+main .hero-content .wrapper .card {
   display: flex;
-  border-radius: 10px;
-  margin: 30px 0;
+  margin: 0.75rem;
   justify-content: center;
 }
-main .hero-content .wrapper .content .card img {
+main .hero-content .wrapper .card img {
   width: 40%;
   border-radius: 10px 0 0 10px;
 }
-main .hero-content .wrapper .content .card .desc {
+main .hero-content .wrapper .card .desc {
   width: 60%;
   background-color: #3c3e43;
   border-radius: 0 10px 10px 0;
   color: #fff;
   padding: 20px;
 }
-main .hero-content .wrapper .content .card .desc h2 {
+main .hero-content .wrapper .card .desc h2 {
   font-size: 25px;
 }
-main .hero-content .wrapper .content .card .desc h2:hover {
+main .hero-content .wrapper .card .desc h2:hover {
   color: orange;
   cursor: pointer;
 }
-main .hero-content .wrapper .content .card .desc .para {
+main .hero-content .wrapper .card .desc .para {
   font-size: 20px;
 }
-main .hero-content .wrapper .content .card .desc .para:hover {
+main .hero-content .wrapper .card .desc .para:hover {
   color: orange;
   cursor: pointer;
 }
-main .hero-content .wrapper .content .card .desc .light-gray {
+main .hero-content .wrapper .card .desc .light-gray {
   color: #9e9e9e;
   padding: 20px 0 10px 0;
   font-size: 18px;
+}
+main .hero-content .wrapper > * {
+  flex: 1 1 600px;
 }
 
 footer {
@@ -128,12 +132,10 @@ footer #currentYear {
     margin: 225px 0 225px 0;
   }
   main .hero-content .wrapper {
-    flex-direction: column;
-    padding: 50px 80px 80px 80px;
-    gap: 0;
+    display: block;
   }
-  main .hero-content .wrapper .content .card {
-    margin: 30px 0 0 0;
+  main .hero-content .wrapper .card {
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -179,21 +181,22 @@ footer #currentYear {
     font-size: 4.125rem;
     margin: 55px 0 55px 0;
   }
-  main .hero-content .wrapper {
-    padding: 30px 30px 60px 30px;
+  main .hero-content {
+    padding: 4rem 2rem 2rem 2rem;
   }
-  main .hero-content .wrapper .content .card {
+  main .hero-content .wrapper .card {
     flex-direction: column;
+    margin: 0 0 2rem 0;
   }
-  main .hero-content .wrapper .content .card img {
+  main .hero-content .wrapper .card img {
     width: 100%;
     border-radius: 10px 10px 0 0;
   }
-  main .hero-content .wrapper .content .card .desc {
+  main .hero-content .wrapper .card .desc {
     width: 100%;
     border-radius: 0 0 10px 10px;
   }
-  main .hero-content .wrapper .content .card .desc h2 {
-    font-size: 30px;
+  main .hero-content .wrapper > * {
+    flex: 1 1 294px;
   }
 }/*# sourceMappingURL=style.css.map */
