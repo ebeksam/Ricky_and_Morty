@@ -35,7 +35,16 @@ body {
   text-decoration: none;
   color: black;
 }
-.container nav ul li a:hover {
+.container nav ul li .active {
+  color: orange;
+}
+.container nav ul li a:active {
+  color: #011ffd;
+}
+.container nav ul li a:focus {
+  color: orange;
+}
+.container nav ul li .active:hover {
   color: orange;
   cursor: pointer;
 }
@@ -97,6 +106,18 @@ main .hero-content .wrapper .card .desc .light-gray {
 }
 main .hero-content .wrapper > * {
   flex: 1 1 600px;
+}
+main .hero-content nav ul {
+  display: flex;
+}
+main .hero-content nav ul li {
+  list-style: none;
+  padding: 0.5rem 0 0 0.7rem;
+}
+main .hero-content nav ul li button {
+  padding: 0.5rem;
+  color: #282b32;
+  font-size: 1rem;
 }
 
 footer {

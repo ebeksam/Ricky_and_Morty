@@ -13,9 +13,9 @@
         <nav>
             <img src="assets/logo.png" alt="logo">
             <button id="mobile-nav-toggle" aria-controls="navigation" aria-expanded="false"></button>
-            <ul data-visible="false" id="navigation">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="characters.html">Characters</a></li>
+            <ul data-visible="false" id="navigation" class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="characters.html">Characters</a></li>
                 <li><a href="location.html">Locations</a></li>
                 <li><a href="episodes.html">Episodes</a></li>
             </ul>
@@ -23,95 +23,36 @@
 
 
     </header>
+
     <main>
         <section class="hero">
             <h1>The Rick and Morty API</h1>
         </section>
         <section class="hero-content">
-            <div class="wrapper">
-                <div class="content">
-                    <div class="card">
-                        <img src="assets/Arbolian.jpeg" alt="Arbolian">
-                        <div class="desc">
-                            <h2>Arbolian Mentirososian</h2>
-                            <p>Alive - Alien</p>
-                            <p class="light-gray">Last known location:</p>
-                            <p class="para">St. Gloopy Noops Hospital</p>
-                            <p class="light-gray">First seen in:</p>
-                            <p class="para get">Get Schwifty</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/Arbolian.jpeg" alt="">
-                        <div class="desc">
-                            <h2>Arbolian Mentirososian</h2>
-                            <p>Alive - Alien</p>
-                            <p class="light-gray">Last known location:<p>
-                                    <p class="para">St. Gloopy Noops Hospital</p>
-                                    <p class="light-gray">First seen in:</p>
-                                    <p class="para get">Get Schwifty</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/Arbolian.jpeg" alt="">
-                        <div class="desc">
-                            <h2>Arbolian Mentirososian</h2>
-                            <p>Alive - Alien</p>
-                            <p class="light-gray">Last known location:</p>
-                            <p class="para">St. Gloopy Noops Hospital</p>
-                            <p class="light-gray">First seen in:</p>
-                            <p class="para get">Get Schwifty</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="card">
-                        <img src="assets/Arbolian.jpeg" alt="">
-                        <div class="desc">
-                            <h2>Arbolian Mentirososian</h2>
-                            <p>Alive - Alien</p>
-                            <p class="light-gray">Last known location:</p>
-                            <p class="para">St. Gloopy Noops Hospital</p>
-                            <p class="light-gray">First seen in:</p>
-                            <p class="para get">Get Schwifty</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/Arbolian.jpeg" alt="">
-                        <div class="desc">
-                            <h2>Arbolian Mentirososian</h2>
-                            <p>Alive - Alien</p>
-                            <p class="light-gray">Last known location:</p>
-                            <p class="para">St. Gloopy Noops Hospital</p>
-                            <p class="light-gray">First seen in:</p>
-                            <p class="para get">Get Schwifty</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="assets/Arbolian.jpeg" alt="">
-                        <div class="desc">
-                            <h2>Arbolian Mentirososian</h2>
-                            <p>Alive - Alien</p>
-                            <p class="light-gray">Last known location:</p>
-                            <p class="para">St. Gloopy Noops Hospital</p>
-                            <p class="light-gray">First seen in:</p>
-                            <p class="para get">Get Schwifty</p>
-                        </div>
-                    </div>
-                </div>
+            <div id="card-container" class="wrapper">
+
             </div>
+            <nav>
+                <ul>
+                    <li>
+                        <button id="prevButton">previous</button>
+                    </li>
+                    <li>
+                        <button id="nextButton">Next</button>
+                    </li>
+                </ul>
+            </nav>
         </section>
+
 
     </main>
     <footer>
         <p>❮❯ by <span class="my-name">Samuel Ebek</span><span id="currentYear"></span></p>
     </footer>
+    <script src="active.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="characters.js">
 
-
-    <script>
-        var year = new Date().getFullYear()
-
-        document.getElementById("currentYear").innerHTML = year
     </script>
 </body>
 

@@ -46,7 +46,19 @@ body {
           color: black;
         }
 
-        a:hover {
+        .active {
+          color: $hover-color;
+        }
+
+        a:active {
+          color: #011ffd;
+        }
+
+        a:focus {
+          color: $hover-color;
+        }
+
+        .active:hover {
           color: $hover-color;
           cursor: pointer;
         }
@@ -123,6 +135,23 @@ main {
 
     .wrapper > * {
       flex: 1 1 600px;
+    }
+
+    nav {
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+          padding: 0.5rem 0 0 0.7rem;
+
+          button {
+            padding: 0.5rem;
+            color: $drak-gray;
+            font-size: 1rem;
+          }
+        }
+      }
     }
   }
 }

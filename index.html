@@ -13,8 +13,8 @@
         <nav>
             <img src="./assets/logo.png" alt="logo">
             <button id="mobile-nav-toggle" aria-controls="navigation" aria-expanded="false"></button>
-            <ul data-visible="false" id="navigation">
-                <li><a href="index.html">Home</a></li>
+            <ul data-visible="false" id="navigation" class="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="characters.html">Characters</a></li>
                 <li><a href="location.html">Locations</a></li>
                 <li><a href="episodes.html">Episodes</a></li>
@@ -28,7 +28,7 @@
             <h1>The Rick and Morty API</h1>
         </section>
         <section class="hero-content">
-            <div id="card-container" class="wrapper">
+            <div id="home-container" class="wrapper">
 
             </div>
         </section>
@@ -37,8 +37,8 @@
     <footer>
         <p>❮❯ by <span class="my-name">Samuel Ebek</span><span id="currentYear"></span></p>
     </footer>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="active.js"></script>
     <script src="nav.js"></script>
 </body>
 
